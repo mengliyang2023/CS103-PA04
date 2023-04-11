@@ -1,0 +1,39 @@
+<h1>Transactions for <%= user.username %>.</h1>
+<p>Here are all your transactions.</p>
+    <a class="btn btn-lg btn-primary" href="/transaction/byCategory">Group by category</a>
+    <a class="btn btn-lg btn-primary" href="?sortBy=category">Sort by category</a>
+    <a class="btn btn-lg btn-primary" href="?sortBy=amount">Sort by amount</a>
+    <a class="btn btn-lg btn-primary" href="?sortBy=description">Sort by description</a>
+    <a class="btn btn-lg btn-primary" href="?sortBy=date">Sort by date</a>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>description</th>
+                <th>amount</th>
+                <th>category</th>
+                <th>date</th>
+                <th>delete</th>
+                <th>edit</th>
+            </tr>
+        </thead>
+    </table>
+
+
+
+<h1>Add A New Transaction</h1>
+  <form method="post" action="transaction">
+    <input type="text" placeholder="description">
+    <br>
+    <input type="text" placeholder="category">
+    <br>
+    <input type="text" placeholder="amount">
+    <br>
+    <input type="date" placeholder="mm/dd/yyyy">
+    <br>
+    <input type="submit" value="store">
+  </form>
+
+
+
+
